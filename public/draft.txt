@@ -1,0 +1,70 @@
+async function run(name, password) {
+    try {
+        await client.connect();
+        console.log("Connected correctly to server");
+        const db = client.db(dbName);
+        // Use the collection "people"
+        const col = db.collection("profile");
+        // Construct a document                                                                                                                                                              
+        let personDocument = {
+                user_name: name,
+                password: password,
+                email: 'sara.mostafa@gmail.com',
+                gender: 'Female',
+                PhoneNumber: '01117265321',
+            }
+            // Insert a single document, wait for promise so we can read it back
+        const p = await col.insertOne(personDocument);
+        // Find one document
+        const myDoc = await col.findOne();
+        // Print to the console
+        console.log(myDoc);
+    } catch (err) {
+        console.log(err.stack);
+    } finally {
+        await client.close();
+    }
+}
+
+
+console.log(user1, pass1);
+    console.log("test");
+    console.log(req.body);
+    run(user1).catch(console.dir);
+
+
+
+    //const mongclient = require('mongodb').MongoClient();
+//var url = "mongodb+srv://noura:noura12@cluster0.sjq3a.mongodb.net/cloud project?retryWrites=true&w=majority";
+const { MongoClient } = require("mongodb");
+// Replace the following with your Atlas connection string                                                                                                                                        
+const client = new MongoClient(url);
+
+
+const MongoClient = require("mongodb");
+app.post('/', (req, res) => {
+    const url = "mongodb+srv://noura:noura12@cluster0.sjq3a.mongodb.net/cloud project?retryWrites=true&w=majority";
+    MongoClient.connect(url, { useUnifiedTopology: true }).then(client => {
+        console.log('Connected to Database')
+        const db = client.db('cloudproject')
+        const profileCollection = db.collection('profile')
+
+        console.log(req.user1)
+
+        console.log("post")
+        profileCollection.insertOne({ user_name: req.query.user1, password: req.body.pass1 }).then(result => {
+
+        }).catch(error => console.error(error))
+
+    });
+
+})
+
+
+
+var express = require('express')
+var app = express();
+
+var bodyparser = require('body-parser');
+app.use(bodyParser.json());
+var urlencodedparser = bodyparser.urlencoded({ extended: false })

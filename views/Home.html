@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Historical Tourism</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/styles.css">
+    <script src="includes/jquery-3.4.1.min.js"></script>
+    <script src="includes/scripts.js"></script>
+
+    <link rel="shortcut icon" href="images/ms-icon-310x310.png" type="../image/x-icon">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="content">
+
+        <div class="containerrr" id="Galleryyy">
+            <img name="imggg" class="activeImage1">
+            <div class="Overlay">Best Historical Tours!</div><a href="/Tours"><button id="homebutton" onmouseover="MouseoverBtn(this)" >  Get Started</button></a>
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1 style="padding-left: 30px;">Historical Places In Egypt</h1>
+        <p class="p10">If you’ve ever dreamed of traveling to Egypt, there’s never been a better time. The country has suffered a long-lasting tourism drought due in large part to the Arab Spring. But nowadays, though the political situation is stable and the country
+            is once again open for business, western tourists remain few and far between. Those who do choose to tour Egypt will be rewarded far beyond their expectations. There are incredible archaeological ruins dating back thousands of years, museums
+            filled with priceless exhibits, stunning desert landscapes, and the magical River Nile, the true beating heart of this wonderful country. You could spend months visiting all the ancient Egyptian historical sites found all over the country,
+            from the Mediterranean and Red Sea coast to the Sudanese border in the south. There’s even an underwater museum located just off the coast of Alexandria.</p>
+        <br>
+
+    </div>
+
+
+
+
+
+    <script>
+        var i = 0;
+        var x = 0;
+        var a = 0;
+        var b = 0;
+        var images = [];
+
+        time = 3000;
+        images[0] = "images/tours/pyramids-of-giza.jpg";
+        images[1] = "images/tours/abu_simbel.jpg";
+        images[2] = "images/tours/karnak_temple_egypt.jpg";
+        images[3] = "images/tours/saqqara_and_dhashur.jpg";
+
+
+        function changeImg() {
+            document.imggg.src = images[i];
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+
+
+        function Start() {
+            changeImg();
+        }
+        window.onload = Start;
+    </script>
+</body>
+
+</html>

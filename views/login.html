@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login</title>
+    <link rel="shortcut icon" href="images/ms-icon-310x310.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/styles.css">
+    <script src="includes/jquery-3.4.1.min.js"></script>
+    <script src="includes/scripts.js">
+    </script>
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="content2">
+
+        <div id="circle"></div>
+        <div id="circle2"></div>
+
+        <h2 id="para">Login</h2>
+        <br>
+
+        <form action="/login" method="POST">
+            <label class="label">Username</label>
+            <br>
+            <input type="text" name="user1" class="username" placeholder=" Enter your username" required>
+            <div id="username"> </div>
+            <br>
+            <label class="label">Password</label>
+            <br>
+            <input type="password" name="pass1" id="password" placeholder=" Enter your password" required>
+            <br>
+            <br><br>
+            <a href="/"><button type="submit" class="login"> Login</button></a>
+
+        </form>
+        <br><br><br>
+        <a href="/signup"><button type="button" class="login"> Sign Up</button></a>
+    </div>
+</body>
+
+
+</html>

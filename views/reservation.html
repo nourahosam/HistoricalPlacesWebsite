@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reservation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/styles.css">
+
+    <script src="includes/jquery-3.4.1.min.js"></script>
+
+    <link rel="shortcut icon" href="images/ms-icon-310x310.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="slideshow">
+        <div class=" image">
+            <img src="images/tours/res.png" />
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="content-venue">
+
+
+        <button class="scroll-to-top">
+                <img src="images/top-arrow.png">
+        </button>
+
+
+        <button class="next-to-sequence">
+                <a href="">
+                    <img src="images/next-sequence.webp">
+                </a>
+        </button>
+
+
+
+        <h1 class="page-title"> Reservation </h1>
+
+
+        <div class="h1" id="choice-title">
+            <h1 class="glow"> Please fill in the form </h1>
+        </div>
+
+
+        <div id="error_message"> </div>
+
+
+        <form method="POST" action="/reservation">
+            <label class="label">Username</label>
+            <br>
+            <input type="text" name="user" class="username" placeholder="" required>
+            <div id=""></div>
+            <br>
+            <label class="label">Phonenumber</label>
+            <br>
+            <input type="text" name="phonenumber" id="" class="username" placeholder="" required>
+            <br>
+            <label class="label">Chosen Tour</label>
+            <br>
+            <input type="text" name="tour" class="username" placeholder="" required>
+            <div id=""></div>
+            <br>
+            <label class="label">Hotel</label>
+            <br>
+            <input type="text" name="hotel" class="username" placeholder="" required>
+            <br>
+            <label class="label">Number of people</label>
+            <br>
+            <input type="text" name="people" id="" class="username" placeholder="" required>
+            <br>
+            <br><br>
+            <label class="label">Number of days</label>
+            <br>
+            <input type="text" id="" name="days" class="username" placeholder="" required>
+            <br>
+
+            <label class="label">Transportation</label>
+            <br>
+            <label class="label2">
+            <input type="radio" name="comp"  name="" > By yourself
+            <input type="radio" name="comp">The tour bus
+            </label>
+            <br>
+
+            <label class="label">Start date</label>
+            <br>
+            <label class="username">
+                              <div class="input_field" id="dateStyle">
+                <input name ="Day" type="text" name="day" placeholder="Day" id="DD">
+                
+            </div>
+            </label>
+            <br>
+            <br> <br> <br> <br>
+            <br>
+            <label class="label">Nationality</label>
+            <br>
+            <label class="label2">
+            <input type="text" id="" name="nat" class="username" placeholder="" required>
+            </label>
+            <br>
+
+
+        </form>
+
+        <a href="/"><button type="submit" lass="bookDEST" id="submit-res">Submit Booking</button></a>
+
+
+
+
+
+    </div>
+    <script src="includes/scripts.js">
+    </script>
+    <script>
+    </script>
+
+
+
+
+
+</body>
+
+</html>

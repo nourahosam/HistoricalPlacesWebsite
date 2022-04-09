@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>login/signup</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
+        <label class="label">Username</label>
+        <input type="text" id="user1" name="user1" />
+        <button type="submit">Login</button>
+    </form>
+</body>
+<script>
+    var element = document.getElementById('user1').val;
+    console.log("element = " +
+        element)
+</script>
+
+</html>
