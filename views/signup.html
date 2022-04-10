@@ -16,46 +16,24 @@
 <body>
     <div id="header"></div>
     <div id="content2">
-
-
         <h2 id="para">SignUp</h2>
 
         <form action="/signup" method="POST">
             <label class="label">Username</label>
             <br>
-            <input type="text" class="username" name="user2" placeholder=" Enter your username" required>
-            <div id="username2"></div>
+            <input type="text" class="username" name="user2" id="user2" placeholder="Enter your username">
             <br>
             <label class="label">Email</label>
             <br>
-            <input type="text" id="email1" name="email2" placeholder=" Example@yahoo.com" required>
-            <div id="Email"></div>
+            <input type="text" id="email2" id="email1" name="email2" placeholder=" Example@yahoo.com" required>
             <br>
             <label class="label">Gender</label>
             <br>
-            <label class="label2">
-            <input type="radio"  name="gender" checked> Male
-            <input type="radio" name="gender">Female
-            </label>
-            <br>
-            <br>
             <label class="label">Phone Number</label>
-            <br>
-            <label class="label2 ">
-                <input type="text" name="phone2" class="username" placeholder=" write you phone number " required>
-            </label>
-            <br>
+            <input type="text" name="phone2" class="username" id="phone2" placeholder=" write you phone number " required>
             <label class="label">Password</label>
-            <br>
-            <input type="password" id="password2" name="pass2" placeholder="Enter your password" required>
-            <div id="pass2"></div>
-            <br>
-            <br>
-
-            <a href="/"><button type="button" class="login"> SignUp</button></a>
-            <div id="signup"></div>
-            <div id="circle3"></div>
-            <div id="circle4"></div>
+            <input type="password" id="password2" name="password2" placeholder="Enter your password" required>
+            <button type="submit" class="login"> SignUp</button>
         </form>
     </div>
 </body>

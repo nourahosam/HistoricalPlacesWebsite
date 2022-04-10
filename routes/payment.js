@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-const MongoClient = require("mongodb");
-const url = "mongodb+srv://noura:noura12@cluster0.sjq3a.mongodb.net/cloud project?retryWrites=true&w=majority";
+const {MongoClient} = require("mongodb");
+const url = "mongodb+srv://noura:noura@cluster0.gh3p9.mongodb.net/cloudProject?retryWrites=true&w=majority";
 /* GET home page. */
 
 
